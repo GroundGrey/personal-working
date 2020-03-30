@@ -1,0 +1,1112 @@
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing:border-box;
+
+  
+/*   border:solid 0.1px white;  */
+}
+html,body{
+  
+  background-color:black;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  height:100%;
+  margin:0;
+  font-size:18px;
+  font-family:sans-serif;
+  font-weight:700;
+}
+.BOX{
+    width:1920px;
+    height:800px;
+    background-color:BLACK;
+    position:relative;
+    overflow-x:scroll;
+}
+/*BOX1架構*/
+.box1{
+  width:45px;
+  background-color:BLUE;
+  box-shadow: 0px 20px 50px rgba(0,125,255,70);
+  transition: 0.5s;
+    position:absolute;
+    top:20px;
+    left:40px;
+}
+
+.top{
+
+  background-position:center;
+  background-size:cover;
+  height:380px;
+  position:relative;
+  top:20px;
+
+  transition:0.5s;
+}
+.top .name{
+  position:absolute;
+  left:-20px;
+  bottom:-20px;
+  padding:5px 15px;
+  letter-spacing:2px;
+  color:white;
+  font-size:24px;
+  font-weight:1000;
+  background:linear-gradient(transparent 0%,black 100%);
+  width:100%;
+  padding-top:30px;
+  padding-bottom:15px;
+}
+.top .name .smallText{
+  font-size:24px;
+}
+.bottom{
+  padding:20px 20px 20px 20px;
+}
+.bottom li{
+  padding:5px 0px;
+}
+.bottom h3{
+  display:inline-block;
+}
+.bottom ul{
+  list-style:none;
+  padding-left:0;
+}
+/*BOX架構*/
+.buttons{
+  margin-tops:0px;
+}
+.tap{
+  position:absolute;
+  font-size:16px;
+  font-weight:bold;
+  background-color:rgba(1,1,1,.3);
+  width:100px;
+  height:40px;
+  text-decoration:none;
+  color:#fff;
+  border-radius:20px;
+  display: inline-block;
+  letter-spacing: 2px;
+  transform:translate(-50%);
+  z-index:0;
+  border:none; 
+/*   取消原始按鈕border */
+}
+.tap:hover{
+  border:1.5px solid #333;
+  background-color:#fff;
+  color:#003C9D;
+  transform:translateX(-50%) scale(1.1);
+  cursor:pointer;
+}
+
+/* 視窗背景 */
+.modal{
+  display:none;
+  position:fixed;
+  z-index:1;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  overflow:auto;
+  background-color:rgba(0,185,255,0.4);
+}
+
+/* 視窗內容 */
+.modal-content{
+  border-radius:10px;
+  top:50%;
+  transform:translateY(-50%);
+  position:relative;
+  background-color:#fefefe;
+  margin:auto;
+  padding:0;
+/*  border:1px solid #888; */
+  width:80%;
+  box-shadow: 0 4px 8px 0
+rgba(0,0,0,0.2),0 6px 20px 0
+rgba(0,0,0,0.19);
+  animation-name:animatetop;
+  animation-duration:0.4s;
+}
+
+/* 視窗頂部 */
+.modal-header{
+  border-radius:10px 10px 0 0;
+  padding: 2px 16px;
+  background-color:#003C9D;
+  color:white;
+}
+
+/* Modal Body */
+.modal-body{
+  width:100%;
+  height:80vh;
+  overflow-y:scroll;
+  padding:20px 16px;
+}
+/*
+定位出長寬，系統自動判定內容如果超出顯示範圍會出現滾動卷軸
+  width:100%;
+  height:80vh;
+  overflow-y:scroll;*/
+/*關閉按鈕*/
+.close{
+  color: #F25CA2;
+  float:right;
+  font-size:28px;
+  font-weight:bold;
+  transition:0.4s;
+  text-decoration:none;
+  cursor:pointer;
+}
+.close:hover{
+  color:#fff;
+  transform:scale(1.5);
+}
+/* 加點動畫 */
+@keyframes animatetop{
+  from {top:-300px;opacity:0}
+  to{top: 50%; opacity:1}
+}
+/*BOX1架構結尾*/
+/*BOX2架構*/
+.box2{
+  width:45px;
+  background-color:YELLOW;
+  box-shadow: 0px 20px 50px rgba(255,255,0,70);
+  transition: 0.5s;
+    position:absolute;
+    top:0px;
+    left:150px;
+}
+
+.top2{
+  background-image:url();
+  background-position:center;
+  background-size:cover;
+  height:380px;
+  position:relative;
+  top:20px;
+  left:0px;
+  transition:0.5s;
+}
+.top2 .name2{
+  position:absolute;
+  left:-20px;
+  bottom:-20px;
+  padding:5px 15px;
+  letter-spacing:2px;
+  color:white;
+  font-size:24px;
+  font-weight:1000;
+  background:linear-gradient(transparent 0%,black 100%);
+  width:100%;
+  padding-top:30px;
+  padding-bottom:15px;
+}
+.top2 .name2 .smallText2{
+  font-size:24px;
+}
+.bottom2{
+  padding:20px 20px 20px 20px;
+}
+.bottom2 li{
+  padding:5px 0px;
+}
+.bottom2 h3{
+  display:inline-block;
+}
+.bottom2 ul{
+  list-style:none;
+  padding-left:0;
+}
+/*BOX2架構*/
+.buttons{
+  margin-tops:0px;
+}
+.tap2{
+  
+  position:absolute;
+  font-size:16px;
+  font-weight:bold;
+  background-color:rgba(1,1,1,.3);
+  width:100px;
+  height:40px;
+  text-decoration:none;
+  color:#fff;
+  border-radius:20px;
+  display: inline-block;
+  letter-spacing: 2px;
+  transform:translate(-50%);
+  z-index:0;
+  border:none; 
+/*   取消原始按鈕border */
+}
+.tap2:hover{
+  border:1.5px solid #333;
+  background-color:#fff;
+  color:#ffe83d;
+  transform:translateX(-50%) scale(1.1);
+  cursor:pointer;
+}
+
+/* 視窗背景 */
+.modal2{
+  display:none;
+  position:fixed;
+  z-index:1;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+/* 視窗背景的漸層 */
+  background-color:rgba(255,255,0,0.4);
+
+}
+
+/* 視窗內容 */
+.modal2-content2{
+
+  border-radius:10px;
+  top:50%;
+  transform:translateY(-50%);
+  position:relative;
+  background-color:#fefefe;
+  margin:auto;
+  padding:0;
+/*  border:1px solid #888; */
+  width:80%;
+  box-shadow: 0 4px 8px 0
+rgba(0,0,0,0.2),0 6px 20px 0
+rgba(0,0,0,0.19);
+  animation-name:animatetop;
+  animation-duration:0.4s;
+}
+
+/* 視窗頂部 */
+.modal2-header2{
+  
+  border-radius:10px 10px 0 0;
+  padding: 2px 16px;
+  background-color:#D9CF59;
+  color:white;
+
+}
+
+/* Modal Body */
+.modal2-body2{
+    width:100%;
+  height:80vh;
+  overflow-y:scroll;
+  padding:20px 16px;
+
+}
+
+/*關閉按鈕*/
+.close2{
+  color: #F25CA2;
+  float:right;
+  font-size:28px;
+  font-weight:bold;
+  transition:0.4s;
+  text-decoration:none;
+  cursor:pointer;
+}
+.close2:hover{
+  color:#fff;
+  transform:scale(1.5);
+}
+/* 加點動畫 */
+@keyframes animatetop2{
+  from {top:-300px;opacity:0}
+  to{top: 50%; opacity:1}
+}
+/*BOX2架構結尾*/
+
+/*綠色   background-color:rgba(0,255,0,0.4);
+} */
+
+/*BOX3架構*/
+.box3{
+  width:45px;
+  background-color:Green;
+  box-shadow: 0px 20px 50px rgba(0,255,0,70);
+  transition: 0.5s;
+    position:absolute;
+    top:0px;
+    left:150px;
+}
+
+.top3{
+  background-image:url();
+  background-position:center;
+  background-size:cover;
+  height:380px;
+  position:relative;
+  top:20px;
+  left:0px;
+  transition:0.5s;
+}
+.top3 .name3{
+  position:absolute;
+  left:-20px;
+  bottom:-20px;
+  padding:5px 15px;
+  letter-spacing:2px;
+  color:white;
+  font-size:24px;
+  font-weight:1000;
+  background:linear-gradient(transparent 0%,black 100%);
+  width:100%;
+  padding-top:30px;
+  padding-bottom:15px;
+}
+.top3 .name3 .smallText3{
+  font-size:24px;
+}
+.bottom3{
+  padding:20px 20px 20px 20px;
+}
+.bottom3 li{
+  padding:5px 0px;
+}
+.bottom3 h3{
+  display:inline-block;
+}
+.bottom3 ul{
+  list-style:none;
+  padding-left:0;
+}
+/*BOX3架構*/
+.buttons{
+  margin-tops:0px;
+}
+.tap3{
+  
+  position:absolute;
+  font-size:16px;
+  font-weight:bold;
+  background-color:rgba(1,1,1,.3);
+  width:100px;
+  height:40px;
+  text-decoration:none;
+  color:#fff;
+  border-radius:20px;
+  display: inline-block;
+  letter-spacing: 2px;
+  transform:translate(-50%);
+  z-index:0;
+  border:none; 
+/*   取消原始按鈕border */
+}
+.tap3:hover{
+  border:1.5px solid #333;
+  background-color:#fff;
+  color:GREEN;
+  transform:translateX(-50%) scale(1.1);
+  cursor:pointer;
+}
+
+/* 視窗背景 */
+.modal3{
+  display:none;
+  position:fixed;
+  z-index:1;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+/* 視窗背景的漸層 */
+  background-color:rgba(55,255,0,0.4);
+
+}
+
+/* 視窗內容 */
+.modal3-content3{
+
+  border-radius:10px;
+  top:50%;
+  transform:translateY(-50%);
+  position:relative;
+  background-color:#fefefe;
+  margin:auto;
+  padding:0;
+/*  border:1px solid #888; */
+  width:80%;
+  box-shadow: 0 4px 8px 0
+rgba(0,0,0,0.2),0 6px 20px 0
+rgba(0,0,0,0.19);
+  animation-name:animatetop;
+  animation-duration:0.4s;
+}
+
+/* 視窗頂部 */
+.modal3-header3{
+  
+  border-radius:10px 10px 0 0;
+  padding: 2px 16px;
+  background-color:yellowgreen;
+  color:white;
+}
+
+/* Modal Body */
+.modal3-body3{
+    width:100%;
+  height:80vh;
+  overflow-y:scroll;
+  padding:20px 16px;
+}
+/*關閉按鈕*/
+.close3{
+  color: #F25CA2;
+  float:right;
+  font-size:28px;
+  font-weight:bold;
+  transition:0.4s;
+  text-decoration:none;
+  cursor:pointer;
+}
+.close3:hover{
+  color:#fff;
+  transform:scale(1.5);
+}
+/* 加點動畫 */
+@keyframes animatetop3{
+  from {top:-300px;opacity:0}
+  to{top: 50%; opacity:1}
+}
+/*BOX3架構結尾*/
+/*BOX4架構*/
+
+/*顏色更改*/
+.box4{
+  width:45px;
+  background-color:RED;
+  box-shadow: 0px 20px 50px rgba(255,25,0,70);
+  transition: 0.5s;
+    position:absolute;
+    top:0px;
+    left:150px;
+}
+
+.top4{
+  background-image:url();
+  background-position:center;
+  background-size:cover;
+  height:380px;
+  position:relative;
+  top:20px;
+  left:0px;
+  transition:0.5s;
+}
+.top4 .name4{
+  position:absolute;
+  left:-20px;
+  bottom:-20px;
+  padding:5px 15px;
+  letter-spacing:2px;
+  color:white;
+  font-size:24px;
+  font-weight:1000;
+  background:linear-gradient(transparent 0%,black 100%);
+  width:100%;
+  padding-top:30px;
+  padding-bottom:15px;
+}
+.top4 .name4 .smallText4{
+  font-size:24px;
+}
+.bottom4{
+  padding:20px 20px 20px 20px;
+}
+.bottom4 li{
+  padding:5px 0px;
+}
+.bottom4 h3{
+  display:inline-block;
+}
+.bottom4 ul{
+  list-style:none;
+  padding-left:0;
+}
+/*BOX4架構*/
+.buttons{
+  margin-tops:0px;
+}
+
+.tap4{
+  
+  position:absolute;
+  font-size:16px;
+  font-weight:bold;
+  background-color:rgba(1,1,1,.3);
+  width:100px;
+  height:40px;
+  text-decoration:none;
+  color:#fff;
+  border-radius:20px;
+  display: inline-block;
+  letter-spacing: 2px;
+  transform:translate(-50%);
+  z-index:0;
+  border:none; 
+/*   取消原始按鈕border */
+}
+/*顏色更改*/
+.tap4:hover{
+  border:1.5px solid #333;
+  background-color:#fff;
+  color:RED;
+  transform:translateX(-50%) scale(1.1);
+  cursor:pointer;
+}
+
+/* 視窗背景 */
+.modal4{
+  display:none;
+  position:fixed;
+  z-index:1;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+/* 視窗背景的漸層 */
+  /*顏色更改*/
+  background-color:rgba(255,0,0,0.4);
+
+}
+
+/* 視窗內容 */
+.modal4-content4{
+
+  border-radius:10px;
+  top:50%;
+  transform:translateY(-50%);
+  position:relative;
+  background-color:#fefefe;
+  margin:auto;
+  padding:0;
+/*  border:1px solid #888; */
+  width:80%;
+  box-shadow: 0 4px 8px 0
+rgba(0,0,0,0.2),0 6px 20px 0
+rgba(0,0,0,0.19);
+  animation-name:animatetop;
+  animation-duration:0.4s;
+}
+
+/* 視窗頂部 */
+/*顏色更改*/
+.modal4-header4{
+  
+  border-radius:10px 10px 0 0;
+  padding: 2px 16px;
+  background-color:#D9595D;
+  color:white;
+}
+
+/* Modal Body */
+.modal4-body4{
+    width:100%;
+  height:80vh;
+  overflow-y:scroll;
+  padding:20px 16px;
+}
+/*關閉按鈕*/
+.close4{
+  color: #F25CA2;
+  float:right;
+  font-size:28px;
+  font-weight:bold;
+  transition:0.4s;
+  text-decoration:none;
+  cursor:pointer;
+}
+.close4:hover{
+  color:#fff;
+  transform:scale(1.5);
+}
+/* 加點動畫 */
+@keyframes animatetop4{
+  from {top:-300px;opacity:0}
+  to{top: 50%; opacity:1}
+}
+/*BOX4架構結尾*/
+/*BOX5架構*/
+
+/*顏色更改*/
+.box5{
+  width:45px;
+  background-color:#59D9A6;
+  box-shadow: 0px 20px 50px rgba(140, 217,89,70);
+  transition: 0.5s;
+    position:absolute;
+    top:0px;
+    left:150px;
+}
+
+.top5{
+  background-image:url();
+  background-position:center;
+  background-size:cover;
+  height:380px;
+  position:relative;
+  top:20px;
+  left:0px;
+  transition:0.5s;
+}
+.top5 .name5{
+  position:absolute;
+  left:-20px;
+  bottom:-20px;
+  padding:5px 15px;
+  letter-spacing:2px;
+  color:white;
+  font-size:24px;
+  font-weight:1000;
+  background:linear-gradient(transparent 0%,black 100%);
+  width:100%;
+  padding-top:30px;
+  padding-bottom:15px;
+}
+.top5 .name5 .smallText5{
+  font-size:24px;
+}
+.bottom5{
+  padding:20px 20px 20px 20px;
+}
+.bottom5 li{
+  padding:5px 0px;
+}
+.bottom5 h3{
+  display:inline-block;
+}
+.bottom5 ul{
+  list-style:none;
+  padding-left:0;
+}
+/*BOX5架構*/
+.buttons{
+  margin-tops:0px;
+}
+
+.tap5{
+  
+  position:absolute;
+  font-size:16px;
+  font-weight:bold;
+  background-color:rgba(1,1,1,.3);
+  width:100px;
+  height:40px;
+  text-decoration:none;
+  color:#fff;
+  border-radius:20px;
+  display: inline-block;
+  letter-spacing: 2px;
+  transform:translate(-50%);
+  z-index:0;
+  border:none; 
+/*   取消原始按鈕border */
+}
+/*顏色更改*/
+.tap5:hover{
+  border:1.5px solid #333;
+  background-color:#fff;
+  color: #59D9A6;
+  transform:translateX(-50%) scale(1.1);
+  cursor:pointer;
+}
+
+/* 視窗背景 */
+.modal5{
+  display:none;
+  position:fixed;
+  z-index:1;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+/* 視窗背景的漸層 */
+  /*顏色更改*/
+  background-color:rgba(89, 217, 166,0.4);
+
+}
+
+/* 視窗內容 */
+.modal5-content5{
+
+  border-radius:10px;
+  top:50%;
+  transform:translateY(-50%);
+  position:relative;
+  background-color:#fefefe;
+  margin:auto;
+  padding:0;
+/*  border:1px solid #888; */
+  width:80%;
+  box-shadow: 0 4px 8px 0
+rgba(0,0,0,0.2),0 6px 20px 0
+rgba(0,0,0,0.19);
+  animation-name:animatetop;
+  animation-duration:0.4s;
+}
+
+/* 視窗頂部 */
+/*顏色更改*/
+.modal5-header5{
+  
+  border-radius:10px 10px 0 0;
+  padding: 2px 16px;
+  background-color: #59D9A6;
+  color:white;
+}
+
+/* Modal Body */
+.modal5-body5{
+    width:100%;
+  height:80vh;
+  overflow-y:scroll;
+  padding:20px 16px;
+}
+/*關閉按鈕*/
+.close5{
+  color: #F25CA2;
+  float:right;
+  font-size:28px;
+  font-weight:bold;
+  transition:0.4s;
+  text-decoration:none;
+  cursor:pointer;
+}
+.close5:hover{
+  color:#fff;
+  transform:scale(1.5);
+}
+/* 加點動畫 */
+@keyframes animatetop5{
+  from {top:-300px;opacity:0}
+  to{top: 50%; opacity:1}
+}
+/*BOX5架構結尾*/
+/*BOX6架構*/
+
+/*顏色更改*/
+.box6{
+  width:45px;
+  background-color: #FF00F2;
+  box-shadow: 0px 20px 50px 
+  rgba(255,0, 255,70);
+  transition: 0.5s;
+    position:absolute;
+    top:0px;
+    left:150px;
+}
+
+.top6{
+  background-image:url();
+  background-position:center;
+  background-size:cover;
+  height:380px;
+  position:relative;
+  top:20px;
+  left:0px;
+  transition:0.5s;
+}
+.top6 .name6{
+  position:absolute;
+  left:-20px;
+  bottom:-20px;
+  padding:5px 15px;
+  letter-spacing:2px;
+  color:white;
+  font-size:24px;
+  font-weight:1000;
+  background:linear-gradient(transparent 0%,black 100%);
+  width:100%;
+  padding-top:30px;
+  padding-bottom:15px;
+}
+.top6 .name6 .smallText6{
+  font-size:24px;
+}
+.bottom6{
+  padding:20px 20px 20px 20px;
+}
+.bottom6 li{
+  padding:5px 0px;
+}
+.bottom6 h3{
+  display:inline-block;
+}
+.bottom6 ul{
+  list-style:none;
+  padding-left:0;
+}
+/*BOX6架構*/
+.buttons{
+  margin-tops:0px;
+}
+
+.tap6{
+  
+  position:absolute;
+  font-size:16px;
+  font-weight:bold;
+  background-color:rgba(1,1,1,.3);
+  width:100px;
+  height:40px;
+  text-decoration:none;
+  color:#fff;
+  border-radius:20px;
+  display: inline-block;
+  letter-spacing: 2px;
+  transform:translate(-50%);
+  z-index:0;
+  border:none; 
+/*   取消原始按鈕border */
+}
+/*顏色更改*/
+.tap6:hover{
+  border:1.5px solid #333;
+  background-color:#fff;
+  color: #5F006B;
+  transform:translateX(-50%) scale(1.1);
+  cursor:pointer;
+}
+
+/* 視窗背景 */
+.modal6{
+  display:none;
+  position:fixed;
+  z-index:1;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+/* 視窗背景的漸層 */
+  /*顏色更改*/
+  background-color:rgba(255, 0, 242,0.4);
+
+}
+
+/* 視窗內容 */
+.modal6-content6{
+
+  border-radius:10px;
+  top:50%;
+  transform:translateY(-50%);
+  position:relative;
+  background-color:#fefefe;
+  margin:auto;
+  padding:0;
+/*  border:1px solid #888; */
+  width:80%;
+  box-shadow: 0 4px 8px 0
+rgba(0,0,0,0.2),0 6px 20px 0
+rgba(0,0,0,0.19);
+  animation-name:animatetop;
+  animation-duration:0.4s;
+}
+
+/* 視窗頂部 */
+/*顏色更改*/
+.modal6-header6{
+  
+  border-radius:10px 10px 0 0;
+  padding: 2px 16px;
+  background-color:purple;
+  color:white;
+}
+
+/* Modal Body */
+.modal6-body6{
+    width:100%;
+  height:80vh;
+  overflow-y:scroll;
+  padding:20px 16px;
+}
+/*關閉按鈕*/
+.close6{
+  color: #F25CA2;
+  float:right;
+  font-size:28px;
+  font-weight:bold;
+  transition:0.4s;
+  text-decoration:none;
+  cursor:pointer;
+}
+.close6:hover{
+  color:#fff;
+  transform:scale(1.5);
+}
+/* 加點動畫 */
+@keyframes animatetop6{
+  from {top:-300px;opacity:0}
+  to{top: 50%; opacity:1}
+}
+/*BOX6架構結尾*/
+/*BOX7架構*/
+
+/*顏色更改*/
+.box7{
+  width:45px;
+  background-color: #FF9B3D;
+  box-shadow: 0px 20px 50px 
+    rgba(95, 0, 107,70);
+  transition: 0.5s;
+    position:absolute;
+    top:0px;
+    left:150px;
+}
+
+.top7{
+  background-image:url();
+  background-position:center;
+  background-size:cover;
+  height:380px;
+  position:relative;
+  top:20px;
+  left:0px;
+  transition:0.5s;
+}
+.top7 .name7{
+  position:absolute;
+  left:-20px;
+  bottom:-20px;
+  padding:5px 15px;
+  letter-spacing:2px;
+  color:white;
+  font-size:24px;
+  font-weight:1000;
+  background:linear-gradient(transparent 0%,black 100%);
+  width:100%;
+  padding-top:30px;
+  padding-bottom:15px;
+}
+.top7 .name7 .smallText7{
+  font-size:24px;
+}
+.bottom7{
+  padding:20px 20px 20px 20px;
+}
+.bottom7 li{
+  padding:5px 0px;
+}
+.bottom7 h3{
+  display:inline-block;
+}
+.bottom7 ul{
+  list-style:none;
+  padding-left:0;
+}
+/*BOX7架構*/
+.buttons{
+  margin-tops:0px;
+}
+
+.tap7{
+  
+  position:absolute;
+  font-size:16px;
+  font-weight:bold;
+  background-color:rgba(1,1,1,.3);
+  width:100px;
+  height:40px;
+  text-decoration:none;
+  color:#fff;
+  border-radius:20px;
+  display: inline-block;
+  letter-spacing: 2px;
+  transform:translate(-50%);
+  z-index:0;
+  border:none; 
+/*   取消原始按鈕border */
+}
+/*顏色更改*/
+.tap7:hover{
+  border:1.5px solid #333;
+  background-color:#fff;
+  color: #FF9B3D;
+  transform:translateX(-50%) scale(1.1);
+  cursor:pointer;
+}
+
+/* 視窗背景 */
+.modal7{
+  display:none;
+  position:fixed;
+  z-index:1;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+/* 視窗背景的漸層 */
+  /*顏色更改*/
+  background-color:rgba(255,155,61,0.4);
+
+}
+
+/* 視窗內容 */
+.modal7-content7{
+
+  border-radius:10px;
+  top:50%;
+  transform:translateY(-50%);
+  position:relative;
+  background-color:#fefefe;
+  margin:auto;
+  padding:0;
+/*  border:1px solid #888; */
+  width:80%;
+  box-shadow: 0 4px 8px 0
+rgba(0,0,0,0.2),0 6px 20px 0
+rgba(0,0,0,0.19);
+  animation-name:animatetop;
+  animation-duration:0.4s;
+}
+
+/* 視窗頂部 */
+/*顏色更改*/
+.modal7-header7{
+  
+  border-radius:10px 10px 0 0;
+  padding: 2px 16px;
+  background-color: orange;
+  color:white;
+}
+
+/* Modal Body */
+.modal7-body7{
+    width:100%;
+  height:80vh;
+  overflow-y:scroll;
+  padding:20px 16px;
+}
+/*關閉按鈕*/
+.close7{
+  color: #F25CA2;
+  float:right;
+  font-size:28px;
+  font-weight:bold;
+  transition:0.4s;
+  text-decoration:none;
+  cursor:pointer;
+}
+.close7:hover{
+  color:#fff;
+  transform:scale(1.5);
+}
+/* 加點動畫 */
+@keyframes animatetop7{
+  from {top:-300px;opacity:0}
+  to{top: 50%; opacity:1}
+}
+/*BOX7架構結尾*/
