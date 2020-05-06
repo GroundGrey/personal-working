@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Lilita+One&display=swap');
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+@import url('https://fonts.googleapis.com/css?family=Lilita+One|Noto+Sans+TC&display=swap');
 *{
   padding:0px;
   margin:0px;
@@ -7,7 +10,7 @@
 /*   border:solid 0.1px white;  */
 }
 html,body{
-  
+
   background-color:black;
   display:flex;
   justify-content:center;
@@ -16,12 +19,13 @@ html,body{
   height:100%;
   margin:0;
   font-size:18px;
-  font-family:serif,sans-serif,cursive,fantasy,monospace;
+  font-family: 'cwTeXYen',sans-serif;
   font-weight:700;
 }
 .BOX{
     width:1920px;
     height:800px;
+    letter-spacing:2px;
     background-color:BLACK;
     position:relative;
     overflow-x:scroll;
@@ -87,6 +91,7 @@ box-shadow:-30px 40px 50px rgba(255,125,0,70);
 }
 .top .name .smallText{
   font-size:24px;
+  
 }
 .bottom{
   padding:20px 20px 20px 20px;
