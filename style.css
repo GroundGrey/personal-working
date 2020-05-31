@@ -29,7 +29,6 @@ html,body{
     background-color:BLACK;
     position:relative;
     overflow-x:scroll;
-
 }
 .box1:hover{
 box-shadow:-30px 10px 50px rgba(0,125,255,70);
@@ -41,22 +40,59 @@ box-shadow:-30px 15px 50px rgba(255,255,0,70);
 box-shadow:-30px 20px 50px rgba(125,255,0,70);
 }
 .box4:hover{
-box-shadow:-30px 25px 50px rgba(255,0,0,70);
+box-shadow:0px 35px 30px rgba(255,0,0,70);
+box-shadow:0px 0px 50px#00BBFF;
+    transition: 1.5s;
+    background-color:#0066FF;
 }
 .box5:hover{
-box-shadow:-30px 30px 50px rgba(0,255,255,70);
+box-shadow:0px 0px 50px #0044BB;
+  transition: 2s;
+    background-color:#5599FF	;
 }
 .box6:hover{
-box-shadow:-30px 35px 50px rgba(255,0,255,70);
+box-shadow:0px 0px 50px #003C9D;
+    transition: 3s;
+    background-color:#99BBFF;
 }
 .box7:hover{
-box-shadow:-30px 40px 50px rgba(255,125,0,70);
+  box-shadow:0px 0px 50px #003377;
+    transition: 3s;
+  background-color:#CCDDFF;
+}
+.top:hover{
+  top:100px;
+      transition: 1.5s;
+    background:linear-gradient(transparent 0%,black 100%);
+}.top2:hover{
+  top:100px;
+      transition: 1.5s;
+    background:linear-gradient(transparent 0%,black 100%);
+}.top3:hover{
+  top:100px;
+      transition: 1.5s;
+    background:linear-gradient(transparent 0%,black 100%);
+}
+
+.top5:hover{
+top:10px;
+      transition: 1.5s;
+    background:linear-gradient(transparent 0%,white 100%);
+}
+.top6:hover{
+top:10px;
+      transition: 1.5s;
+    background:linear-gradient(transparent 0%,white 100%);
+}.top7:hover{
+top:10px;
+      transition: 1.5s;
+    background:linear-gradient(transparent 0%,white 100%);
 }
 /*BOX1架構*/
 .box1{
   width:45px;
-  background-color:BLUE;
-  box-shadow: 0px 20px 50px rgba(0,25,255,70);
+  background-color:#003377;
+  box-shadow: 0px 0px 50px #CCDDFF;
   transition: 0.5s;
     position:absolute;
     top:20px;
@@ -78,13 +114,13 @@ box-shadow:-30px 40px 50px rgba(255,125,0,70);
 .top .name{
   position:absolute;
   left:-20px;
-  bottom:-20px;
+  bottom:60px;
   padding:5px 15px;
   letter-spacing:2px;
   color:white;
   font-size:24px;
   font-weight:1000;
-  background:linear-gradient(transparent 0%,black 100%);
+
   width:100%;
   padding-top:30px;
   padding-bottom:15px;
@@ -171,7 +207,7 @@ rgba(0,0,0,0.19);
 .modal-header{
   border-radius:10px 10px 0 0;
   padding: 2px 16px;
-  background-color:#003C9D;
+  background-color:rgba(0,185,255,0.4);
   color:white;
 }
 
@@ -210,12 +246,12 @@ rgba(0,0,0,0.19);
 /*BOX2架構*/
 .box2{
   width:45px;
-  background-color:YELLOW;
-  box-shadow: 0px 20px 50px rgba(255,255,0,70);
+  background-color:#003C9D;
+  box-shadow: 0px 0px 50px #99BBFF;
   transition: 0.5s;
     position:absolute;
-    top:0px;
-    left:150px;
+    top:20px;
+    left:450px;
 }
 
 .top2{
@@ -231,13 +267,12 @@ rgba(0,0,0,0.19);
 .top2 .name2{
   position:absolute;
   left:-20px;
-  bottom:-20px;
+  bottom:60px;
   padding:5px 15px;
   letter-spacing:2px;
   color:white;
   font-size:24px;
   font-weight:1000;
-  background:linear-gradient(transparent 0%,black 100%);
   width:100%;
   padding-top:30px;
   padding-bottom:15px;
@@ -283,10 +318,11 @@ rgba(0,0,0,0.19);
 .tap2:hover{
   border:1.5px solid #333;
   background-color:#fff;
-  color:#ffe83d;
+  color:#003C9D;
   transform:translateX(-50%) scale(1.1);
   cursor:pointer;
-    box-shadow: 0px 20px 50px rgba(255,255,0,70);
+    box-shadow: 0px 20px 50px rgba(0,125,255,70);
+
 }
 
 /* 視窗背景 */
@@ -299,7 +335,7 @@ rgba(0,0,0,0.19);
   width:100%;
   height:100%;
 /* 視窗背景的漸層 */
-  background-color:rgba(255,255,0,0.4);
+  background-color:rgba(0,185,255,0.4);
 
 }
 
@@ -327,7 +363,7 @@ rgba(0,0,0,0.19);
   
   border-radius:10px 10px 0 0;
   padding: 2px 16px;
-  background-color:#D9CF59;
+  background-color:rgba(0,185,255,0.4);
   color:white;
 
 }
@@ -368,12 +404,12 @@ rgba(0,0,0,0.19);
 /*BOX3架構*/
 .box3{
   width:45px;
-  background-color:Green;
-  box-shadow: 0px 20px 50px rgba(0,255,0,70);
+  background-color:#0044BB;
+  box-shadow: 0px -20px 50px #5599FF;
   transition: 0.5s;
     position:absolute;
-    top:0px;
-    left:150px;
+    top:20px;
+    left:600px;
 }
 
 .top3{
@@ -389,13 +425,12 @@ rgba(0,0,0,0.19);
 .top3 .name3{
   position:absolute;
   left:-20px;
-  bottom:-20px;
+  bottom:60px;
   padding:5px 15px;
   letter-spacing:2px;
   color:white;
   font-size:24px;
   font-weight:1000;
-  background:linear-gradient(transparent 0%,black 100%);
   width:100%;
   padding-top:30px;
   padding-bottom:15px;
@@ -441,10 +476,10 @@ rgba(0,0,0,0.19);
 .tap3:hover{
   border:1.5px solid #333;
   background-color:#fff;
-  color:GREEN;
+  color:#003C9D;
   transform:translateX(-50%) scale(1.1);
   cursor:pointer;
-      box-shadow: 0px 20px 50px rgba(125,255,0,70);
+    box-shadow: 0px 20px 50px rgba(0,125,255,70);
 }
 
 /* 視窗背景 */
@@ -457,7 +492,7 @@ rgba(0,0,0,0.19);
   width:100%;
   height:100%;
 /* 視窗背景的漸層 */
-  background-color:rgba(55,255,0,0.4);
+  background-color:rgba(0,185,255,0.4);
 
 }
 
@@ -485,7 +520,7 @@ rgba(0,0,0,0.19);
   
   border-radius:10px 10px 0 0;
   padding: 2px 16px;
-  background-color:yellowgreen;
+  background-color:rgba(0,185,255,0.4);
   color:white;
 }
 
@@ -521,12 +556,12 @@ rgba(0,0,0,0.19);
 /*顏色更改*/
 .box4{
   width:45px;
-  background-color:RED;
-  box-shadow: 0px 20px 50px rgba(255,25,0,70);
+  background-color:#00BBFF;
+  box-shadow: 0px 0px 50px #0066FF;
   transition: 0.5s;
     position:absolute;
-    top:0px;
-    left:150px;
+    top:20px;
+    left:750px;
 }
 
 .top4{
@@ -584,7 +619,7 @@ rgba(0,0,0,0.19);
   height:40px;
   text-decoration:none;
   color:#fff;
-  border-radius:20px;
+  border-radius:5px;
   display: inline-block;
   letter-spacing: 2px;
   transform:translate(-50%);
@@ -596,10 +631,12 @@ rgba(0,0,0,0.19);
 .tap4:hover{
   border:1.5px solid #333;
   background-color:#fff;
-  color:RED;
+  color:#003C9D;
   transform:translateX(-50%) scale(1.1);
   cursor:pointer;
-  box-shadow: 0px 20px 50px rgba(255,0,0,70);
+    box-shadow: 0px 20px 50px rgba(0,125,255,70);
+        transition: 1.5s;
+    background:linear-gradient(transparent 0%,whitesmoke 50%);
 }
 
 /* 視窗背景 */
@@ -613,7 +650,7 @@ rgba(0,0,0,0.19);
   height:100%;
 /* 視窗背景的漸層 */
   /*顏色更改*/
-  background-color:rgba(255,0,0,0.4);
+  background-color:rgba(0,185,255,0.4);
 
 }
 
@@ -642,7 +679,7 @@ rgba(0,0,0,0.19);
   
   border-radius:10px 10px 0 0;
   padding: 2px 16px;
-  background-color:#D9595D;
+  background-color:rgba(0,185,255,0.4);
   color:white;
 }
 
@@ -678,23 +715,24 @@ rgba(0,0,0,0.19);
 /*顏色更改*/
 .box5{
   width:45px;
-  background-color:#59D9A6;
-  box-shadow: 0px 20px 50px rgba(140, 217,89,70);
+  background-color:#0044BB;
+  box-shadow: 0px 0px 50px #5599FF	;
   transition: 0.5s;
     position:absolute;
-    top:0px;
-    left:150px;
+    top:20px;
+    left:900px;
 }
 
 .top5{
-  background-image:url();
+
   background-position:center;
   background-size:cover;
   height:380px;
   position:relative;
   top:20px;
-  left:0px;
+
   transition:0.5s;
+  
 }
 .top5 .name5{
   position:absolute;
@@ -753,10 +791,10 @@ rgba(0,0,0,0.19);
 .tap5:hover{
   border:1.5px solid #333;
   background-color:#fff;
-  color: #59D9A6;
+  color:#003C9D;
   transform:translateX(-50%) scale(1.1);
   cursor:pointer;
-    box-shadow: 0px 20px 50px rgba(0,255,255,70);
+    box-shadow: 0px 20px 50px rgba(0,125,255,70);
 }
 
 /* 視窗背景 */
@@ -770,7 +808,7 @@ rgba(0,0,0,0.19);
   height:100%;
 /* 視窗背景的漸層 */
   /*顏色更改*/
-  background-color:rgba(89, 217, 166,0.4);
+  background-color:rgba(0,185,255,0.4);
 
 }
 
@@ -799,7 +837,7 @@ rgba(0,0,0,0.19);
   
   border-radius:10px 10px 0 0;
   padding: 2px 16px;
-  background-color: #59D9A6;
+  background-color:rgba(0,185,255,0.4);
   color:white;
 }
 
@@ -835,13 +873,14 @@ rgba(0,0,0,0.19);
 /*顏色更改*/
 .box6{
   width:45px;
-  background-color: #FF00F2;
-  box-shadow: 0px 20px 50px 
-  rgba(255,0, 255,70);
+  background-color:#003C9D ;
+  box-shadow: 0px 0px 50px 
+  #99BBFF;
   transition: 0.5s;
     position:absolute;
-    top:0px;
-    left:150px;
+    top:20px;
+    left:1050px;
+
 }
 
 .top6{
@@ -911,10 +950,10 @@ rgba(0,0,0,0.19);
 .tap6:hover{
   border:1.5px solid #333;
   background-color:#fff;
-  color: #5F006B;
+  color:#003C9D;
   transform:translateX(-50%) scale(1.1);
   cursor:pointer;
-box-shadow: 0px 20px 50px rgba(255,0,255,70);
+    box-shadow: 0px 20px 50px rgba(0,125,255,70);
 }
 
 /* 視窗背景 */
@@ -928,7 +967,7 @@ box-shadow: 0px 20px 50px rgba(255,0,255,70);
   height:100%;
 /* 視窗背景的漸層 */
   /*顏色更改*/
-  background-color:rgba(255, 0, 242,0.4);
+  background-color:rgba(0,185,255,0.4);
 
 }
 
@@ -957,7 +996,7 @@ rgba(0,0,0,0.19);
   
   border-radius:10px 10px 0 0;
   padding: 2px 16px;
-  background-color:purple;
+  background-color:rgba(0,185,255,0.4);
   color:white;
 }
 
@@ -993,13 +1032,14 @@ rgba(0,0,0,0.19);
 /*顏色更改*/
 .box7{
   width:45px;
-  background-color: #FF9B3D;
-  box-shadow: 0px 20px 50px 
-    rgba(255, 155, 107,70);
+  background-color:#003377;
+  box-shadow: 0px 0px 50px 
+  #CCDDFF ;
   transition: 0.5s;
     position:absolute;
-    top:0px;
-    left:150px;
+    top:20px;
+    left:1200px;
+
 }
 
 .top7{
@@ -1069,10 +1109,10 @@ rgba(0,0,0,0.19);
 .tap7:hover{
   border:1.5px solid #333;
   background-color:#fff;
-  color: #FF9B3D;
+  color:#003C9D;
   transform:translateX(-50%) scale(1.1);
   cursor:pointer;
-  box-shadow: 0px 20px 50px rgba(255,125,0,70);
+    box-shadow: 0px 20px 50px rgba(0,125,255,70);
 }
 
 /* 視窗背景 */
@@ -1086,7 +1126,7 @@ rgba(0,0,0,0.19);
   height:100%;
 /* 視窗背景的漸層 */
   /*顏色更改*/
-  background-color:rgba(255,155,61,0.4);
+  background-color:rgba(0,185,255,0.4);
 
 }
 
@@ -1115,7 +1155,7 @@ rgba(0,0,0,0.19);
   
   border-radius:10px 10px 0 0;
   padding: 2px 16px;
-  background-color: orange;
+  background-color:rgba(0,185,255,0.4);
   color:white;
 }
 
